@@ -12,11 +12,11 @@ Transformer부터 표현학습·도메인 적응까지, 제조 센서 시계열�
 
 | # | 노트북 | 주제 | Colab |
 |---|---|---|---|
-| 00 | `d1_00_manufacturing_ai_landscape` | 제조 AI 비즈니스 지형과 3대 난제 | [열기](https://colab.research.google.com/github/leejiyoon52/ai-course/blob/main/day1/notebooks/d1_00_manufacturing_ai_landscape.ipynb) |
-| 01 | `d1_01_timeseries_foundations` | 시계열 데이터의 이해와 실습 토대 | [열기](https://colab.research.google.com/github/leejiyoon52/ai-course/blob/main/day1/notebooks/d1_01_timeseries_foundations.ipynb) |
-| 02 | `d1_02_deep_timeseries_evolution` | 딥러닝 시계열 계보 — RNN에서 PatchTST까지 | [열기](https://colab.research.google.com/github/leejiyoon52/ai-course/blob/main/day1/notebooks/d1_02_deep_timeseries_evolution.ipynb) |
-| 03 | `d1_03_anomaly_transformer_xai` | Anomaly Transformer와 원인 추적 (XAI) | [열기](https://colab.research.google.com/github/leejiyoon52/ai-course/blob/main/day1/notebooks/d1_03_anomaly_transformer_xai.ipynb) |
-| 04 | `d1_04_ssl_domain_adaptation` | 표현학습(SSL)과 도메인 적응 | [열기](https://colab.research.google.com/github/leejiyoon52/ai-course/blob/main/day1/notebooks/d1_04_ssl_domain_adaptation.ipynb) |
+| 01 | `d1_01_manufacturing_ai_landscape` | 제조 산업 AI 활용 Overview | [열기](https://colab.research.google.com/github/leejiyoon52/ai-course/blob/main/day1/notebooks/d1_01_manufacturing_ai_landscape.ipynb) |
+| 02 | `d1_02_timeseries_foundations` | 시계열 데이터의 이해와 실습 | [열기](https://colab.research.google.com/github/leejiyoon52/ai-course/blob/main/day1/notebooks/d1_02_timeseries_foundations.ipynb) |
+| 03 | `d1_03_deep_timeseries_evolution` | 딥러닝 시계열 모델의 발전 과정 — RNN에서 PatchTST까지 | [열기](https://colab.research.google.com/github/leejiyoon52/ai-course/blob/main/day1/notebooks/d1_03_deep_timeseries_evolution.ipynb) |
+| 04 | `d1_04_anomaly_transformer_xai` | Anomaly Transformer와 원인 추적 (XAI) | [열기](https://colab.research.google.com/github/leejiyoon52/ai-course/blob/main/day1/notebooks/d1_04_anomaly_transformer_xai.ipynb) |
+| 05 | `d1_05_ssl_domain_adaptation` | 표현학습(SSL)과 도메인 적응 | [열기](https://colab.research.google.com/github/leejiyoon52/ai-course/blob/main/day1/notebooks/d1_05_ssl_domain_adaptation.ipynb) |
 
 ### 시작 전 확인
 
@@ -24,13 +24,19 @@ Transformer부터 표현학습·도메인 적응까지, 제조 센서 시계열�
 2. 위에서부터 셀을 실행합니다. 데이터와 모듈은 이 저장소에서 자동으로 받아집니다.
 3. **API 키는 필요 없습니다.**
 
+### 셀 마커 안내
+
+- `"""채워넣기"""` 가 적힌 셀(d1_01~04)은 코드 대부분이 이미 있고, `"""채워넣기"""`로 표시된 부분만 채우면 됩니다.
+- `"""따라하기"""` 가 적힌 셀(d1_05)은 강사와 함께 직접 실행합니다.
+- `"""직접구현"""` 이 적힌 셀(d1_05)은 직접 채워 봅니다. 정답은 노트북 맨 아래에 있습니다.
+
 ---
 
 ## 폴더 구조
 
 ```
 day1/
-├── notebooks/     실습 노트북 5권
+├── notebooks/     실습 노트북 5권 (학생용)
 ├── modules/       mfg_datagen.py (합성 데이터 생성기) · loaders.py (데이터 로더)
 ├── cmapss/        NASA C-MAPSS 터보팬 엔진 데이터 (FD001, FD003)
 ├── pump/          수처리장 펌프 센서 5분 요약본

@@ -234,7 +234,7 @@ def load_checkpoint(name, map_location="cpu"):
     """사전학습 체크포인트 로드. 반환: state_dict 또는 None(→ 데모 모델 폴백).
 
     사용 예:
-        sd = load_checkpoint("d1_03_anomaly_transformer")
+        sd = load_checkpoint("d1_04_anomaly_transformer")
         if sd is not None:
             model.load_state_dict(sd)
         else:
